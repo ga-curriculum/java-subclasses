@@ -2,7 +2,7 @@
 
 ## About
 
-tktk Write a short but descriptive summary of the content in this module.
+By the conclusion of this lesson, students will have the capability to both create a subclass and utilize it to enhance the functionality of the base class.
 
 ## Prerequisites
 
@@ -12,39 +12,15 @@ tktk Write a short but descriptive summary of the content in this module.
 
 ## Content
 
-| Lesson | Video Time | Video | Skills |
-| ------ |:----------:|:-----:| ------ |
-| [Setup](./setup/README.md)                               | -- | -- | Setting up the development environment  |
-| [Concepts](./concepts/README.md)                         | -- | -- | tktk skills covered                     |
-| [tktk Microlesson Name](./tktk-microlesson-01/README.md) | -- | -- | tktk skills covered                     |
-| [tktk Microlesson Name](./tktk-microlesson-02/README.md) | -- | -- | tktk skills covered                     |
-| [tktk Microlesson Name](./tktk-microlesson-03/README.md) | -- | -- | tktk skills covered                     |
-| **Total content**                                        | -- | -- |                                         |
+| Lesson | Time | Learning Objectives |
+| ------ |:----------:|:------ |
+| [Superclasses and Subclasses](./superclasses-and-sublcasses/README.md) | 20 min | Engage with superclasses and subclasses using the `extend` keyword, `@Override` annotations, and `finals` to restrict inheritance.  |
+| [Upcasting and Downcasting](./upcasting-and-downcasting/README.md) | 15 min | Apply upcasting and downcasting to manipulate objects with an inheritance hierarchy.  |
+| [Shapes Practice](./shapes-practice/README.md) | 50 min | Practice appying superclasses and subclasses. |
+| **Total content**  | 85 min |  |
 
-## Level Up content
-
-| Lesson | Video Time | Video | Skills |
-| ------ |:----------:|:-----:| ------ |
-| [tktk Microlesson Name](./tktk-microlesson-04/README.md) | -- | -- | tktk skills covered                     |
-| **Total Level Up content**                               | -- | -- |                                         |
-
-## References
-
-📖 [Reference Materials](./references/README.md)
-
-## Deployed sites
-
-tktk If there is not a deployed site related to this module this section and all of its content should be removed.
-
-🌐 [Live site](#tktk-deployed-app-url)
-
-🐙 [Repository](#tktk-repository-for-deployed-app)
 
 ## Internal resources
-
-✏️ [Instructor Guide](./internal-resources/instructor-guide.md)
-
-🎥 [Video Hub](./internal-resources/video-hub.md)
 
 🏗️ [Release Notes](./internal-resources/release-notes.md)
 
