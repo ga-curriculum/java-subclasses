@@ -241,7 +241,7 @@ public class ShapeCalc {
 
 That was an intense lesson! Let's recap.
 
-### Tying Back to the Four Pillars
+### Tying Back to the Four Principles
 
 Combining subclasses and visibility, we can hide the details of functionality inside a class and just expose an API (application programming interface). Now that we've got inheritance in our tool belt, the uses of encapsulation (which includes things like the access level), abstraction, and polymorphism become a lot more salient.
 
