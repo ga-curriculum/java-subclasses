@@ -1,4 +1,4 @@
-# ![[tktk Module Name] - tktk Microlesson Name](./assets/hero.png)
+# ![[tktk Module Name] - tktk Microlesson Name](./assets/superclasses-and-subclasses.png)
 
 **Learning objective:** By the end of this lesson, students will be able to engage with superclasses and subclasses using the `extend` keyword, `@Override` annotations, and `finals` to restrict inheritance. 
 

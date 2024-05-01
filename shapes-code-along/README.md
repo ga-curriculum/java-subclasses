@@ -1,4 +1,4 @@
-# ![[tktk Module Name] - tktk Microlesson Name](./assets/hero.png)
+# ![[tktk Module Name] - tktk Microlesson Name](./assets/shapes-code-along.png)
 
 **Learning objective:** By the end of this lesson, students will be able to practice appying superclasses and subclasses.
 

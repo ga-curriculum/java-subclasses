@@ -1,4 +1,4 @@
-# ![[tktk Module Name]](./assets/tktk-hero.png)
+# ![[tktk Module Name]](./assets/java-subclasses-header.png)
 
 ## About
 
@@ -6,9 +6,7 @@ By the conclusion of this lesson, students will have the capability to both crea
 
 ## Prerequisites
 
-- tktk
-- tktk
-- tktk
+- Java Objects and Classes Module
 
 ## Content
 
@@ -16,7 +14,7 @@ By the conclusion of this lesson, students will have the capability to both crea
 | ------ |:----------:|:------ |
 | [Superclasses and Subclasses](./superclasses-and-sublcasses/README.md) | 20 min | Engage with superclasses and subclasses using the `extend` keyword, `@Override` annotations, and `finals` to restrict inheritance.  |
 | [Upcasting and Downcasting](./upcasting-and-downcasting/README.md) | 15 min | Apply upcasting and downcasting to manipulate objects with an inheritance hierarchy.  |
-| [Shapes Practice](./shapes-practice/README.md) | 50 min | Practice appying superclasses and subclasses. |
+| [Shapes Code-Along](./shapes-code-along/README.md) | 50 min | Practice appying superclasses and subclasses. |
 | **Total content**  | 85 min |  |
 
 

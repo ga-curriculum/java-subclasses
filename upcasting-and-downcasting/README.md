@@ -1,4 +1,4 @@
-# ![[tktk Module Name] - tktk Microlesson Name](./assets/hero.png)
+# ![[tktk Module Name] - tktk Microlesson Name](./assets/upcasting-and-downcasting.png)
 
 **Learning objective:** By the end of this lesson, students will be able to apply upcasting and downcasting to manipulate objects with an inheritance hierarchy. 
 
