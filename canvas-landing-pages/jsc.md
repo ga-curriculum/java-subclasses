@@ -10,5 +10,5 @@ By the conclusion of this lesson, students will have the capability to both crea
 | ------ |:----------:|:------ |
 | [Superclasses and Subclasses](../superclasses-and-sublcasses/README.md) | 15 min | Engage with superclasses and subclasses using the `extend` keyword, `@Override` annotations, and `finals` to restrict inheritance.  |
 | [Upcasting and Downcasting](../upcasting-and-downcasting/README.md) | 15 min | Apply upcasting and downcasting to manipulate objects with an inheritance hierarchy.  |
-| [Shapes Code-Along](../shapes-code-along/README.md) | 45 min | Practice appying superclasses and subclasses. |
+| [Shapes Code-Along](../shapes-code-along/README.md) | 45 min | Practice applying superclasses and subclasses. |
 | **Total content**  | 75 min |  |
