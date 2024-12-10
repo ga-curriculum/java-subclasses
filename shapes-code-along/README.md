@@ -1,6 +1,9 @@
-# ![[tktk Module Name] - tktk Microlesson Name](./assets/shapes-code-along.png)
+<h1>
+  <span class="headline">Java Subclasses</span>
+  <span class="subhead">Shapes Code-Along</span>
+</h1>
 
-**Learning objective:** By the end of this lesson, students will be able to practice appying superclasses and subclasses.
+**Learning objective:** By the end of this lesson, you'll be able to write java programs using the techniques of working with subclasses and superclasses.
 
 ## Independent Practice: Shapes (40 min)
 
@@ -14,7 +17,7 @@ Let's start by coding out this first part together. Say we have a superclass cal
 package com.generalassembly.oop;
 
 public class Shape {
-    public double getCircumference() {
+    public double getPerimeter() {
         return 0;
     }
 
@@ -24,9 +27,9 @@ public class Shape {
 }
 ```
 
-Our `Shape` class has methods `getCircumference()` and `getArea()` that, depending on the shape, will calculate the circumference and area of the shape.
+Our `Shape` class has methods `getPerimeter()` and `getArea()` that, depending on the shape, will calculate the perimeter and area of the shape.
 
-As we define some subclasses to inherit from `Shape`, remember that each of these shapes has a slightly different function to determine its area or circumference.
+As we define some subclasses to inherit from `Shape`, remember that each of these shapes has a slightly different function to determine its area or perimeter.
 
 Let's start by defining a subclass of `Shape` called `Triangle` that takes three sides in its constructor:
 
@@ -48,17 +51,17 @@ public class Triangle extends Shape {
 
 ### Part 2 (15 min)
 
-Your assignment is to implement the `getCircumference()` and `getArea()` methods.
+Your assignment is to implement the `getPerimeter()` and `getArea()` methods.
 
-The circumference (or perimeter) is defined as the length of the outline of the shape. So, for a triangle, it's the sum of the sides, and for a circle, it's 2πr, where r is the radius and π is `Math.PI`.
+The perimeter is defined as the total distance around any closed two-dimensional shape. So, for a triangle, it's the sum of the sides, and for a circle, it's 2πr, where r is the radius and π is `Math.PI`.
 
-The area is the square footage covered by the shape. For a triangle, we can use Heron's formula:
+The area is the amount of surface enclosed inside a shape. For a triangle, we can use Heron's formula:
 
  ```
- √(p(p−a)*(p−b)*(p−c))    
+ √(s(s−a)*(s−b)*(s−c))    
  ```
 
-In this case, `p = (a+b+c)/2`. To take a square root, use the `Math.sqrt()` method. 
+In this case, `s = (a+b+c)/2` (half the perimeter). To take a square root, we can use the `Math.sqrt()` method. 
 
 When you're done, check your solution against the answer below.
  
@@ -80,16 +83,16 @@ public class Triangle extends Shape{
     }
 
     @Override
-    public double getCircumference() {
+    public double getPerimeter() {
         return side1 + side2 + side3;
     }
 
     @Override
     public double getArea() {
-        double circumference = getCircumference();
-        double p = circumference/2;
-        double squared = p * (p-side1) * (p-side2) * (p-side3);
-        double area = Math.sqrt(squared);
+        double perimeter = getPerimeter();
+        double s = perimeter/2;
+        double squaredArea = s * (s-side1) * (s-side2) * (s-side3);
+        double area = Math.sqrt(squaredArea);
         return area;
     }
 }
@@ -115,7 +118,7 @@ public class Circle extends Shape {
     }
 
     @Override
-    public double getCircumference() {
+    public double getPerimeter() {
         return 2 * Math.PI * radius;
     }
 
@@ -137,7 +140,7 @@ public class Rectangle extends Shape {
     }
 
     @Override
-    public double getCircumference() {
+    public double getPerimeter() {
         return 2*length + 2*width;
     }
 
@@ -154,7 +157,7 @@ public class Rectangle extends Shape {
 
 Now let's say we want to create a `Square` shape. We remember from geometry class that a square is a special kind of rectangle in which all sides are equal.
 
-Let's create a `Square` class that extends `Rectangle` and, instead of overriding the `getCircumference()` and `getArea()` methods, just provide a constructor that will pass in the same value for all sides into the `Rectangle` constructor.
+Let's create a `Square` class that extends `Rectangle` and, instead of overriding the `getPerimeter()` and `getArea()` methods, just provide a constructor that will pass in the same value for all sides into the `Rectangle` constructor.
 
 > **Knowledge Check**: How do you think we should implement this? Shout out some possible solutions.
 
@@ -171,11 +174,11 @@ public class Square extends Rectangle {
 
 </details>
 
-Now this `Square` will automatically calculate its circumference and area.
+Now this `Square` will automatically calculate its perimeter and area.
 
 ### Part 4 (15 min)
 
-Finally, let's test our code by calculating the circumference and area for each of the following four shapes:
+Finally, let's test our code by calculating the perimeter and area for each of the following four shapes:
 
 * A triangle with sides 3, 4, 5.
 * A rectangle with length = 4 and height = 5.
@@ -185,18 +188,18 @@ Finally, let's test our code by calculating the circumference and area for each 
 Assign each one of these shapes to a variable of the appropriate type, then pass that shape to a method with signature: 
 
 ```java
-private static String getCircumferenceAndArea(Shape shape)
+private static String getPerimeterAndArea(Shape shape)
 ```
 
-That will return a `String` such as `ShapeType circumference, area = x, y`, with the correct values for each shape.
+That will return a `String` such as `ShapeType perimeter, area = x, y`, with the correct values for each shape.
 
 **Sample expected output:**
 
 ```java
-Triangle circumference, area = 12.0, 6.0
-Rectangle circumference, area = 18.0, 20.0
-Circle circumference, area = 25.132741228718345, 50.26548245743669
-Square circumference, area = 16.0, 16.0
+Triangle perimeter, area = 12.0, 6.0
+Rectangle perimeter, area = 18.0, 20.0
+Circle perimeter, area = 25.132741228718345, 50.26548245743669
+Square perimeter, area = 16.0, 16.0
 ```
 
 When you're ready, check your answer with the solution below.
@@ -220,14 +223,14 @@ public class ShapeCalc {
         Circle circle = new Circle(4);
         Square square = new Square(4);
 
-        System.out.println("Triangle " + getCircumferenceAndArea(triangle));
-        System.out.println("Rectangle " + getCircumferenceAndArea(rectangle));
-        System.out.println("Circle " + getCircumferenceAndArea(circle));
-        System.out.println("Square " + getCircumferenceAndArea(square));
+        System.out.println("Triangle " + getPerimeterAndArea(triangle));
+        System.out.println("Rectangle " + getPerimeterAndArea(rectangle));
+        System.out.println("Circle " + getPerimeterAndArea(circle));
+        System.out.println("Square " + getPerimeterAndArea(square));
     }
 
-    private static String getCircumferenceAndArea(Shape shape) {
-        String rval = "circumference, area = " + shape.getCircumference() + ", " + shape.getArea();
+    private static String getPerimeterAndArea(Shape shape) {
+        String rval = "perimeter, area = " + shape.getPerimeter() + ", " + shape.getArea();
         return rval;
     }
 }
@@ -237,24 +240,6 @@ public class ShapeCalc {
 
 ----
 
-## Conclusion (10 min)
+## Conclusion
 
-That was an intense lesson! Let's recap.
-
-### Tying Back to the Four Principles
-
-Combining subclasses and visibility, we can hide the details of functionality inside a class and just expose an API (application programming interface). Now that we've got inheritance in our tool belt, the uses of encapsulation (which includes things like the access level), abstraction, and polymorphism become a lot more salient.
-
-#### Remember Polymorphism?
-
-Polymorphism may sound scary, and it will keep cropping up. But the concept is easier to understand than the word suggests.
-
-Now that we have a specific example of polymorphism, let's revisit the topic. We see that we can create various subclasses of the same class and implement specific functionality for each.
-
-In our first example, we had `Cat` and `Lion`, and both had a `getLives()` method. However, their implementation was different despite sharing the same name.
-
-In our second example, we had five different shapes — `Shape`, `Triangle`, `Circle`, `Rectangle`, and `Square` — all with different implementations of their `getCircumference()` and `getArea()` functionality. Yet they all worked just fine, and we didn't need to alter how we used the instance of each shape.
-
-### Summary
-
-Inheritance is here for our convenience and to keep our code DRY (that stands for "Don't Repeat Yourself"). It might seem like an intimidating concept, but once you master it, it can be a powerful tool. You'll find many examples of inheritance and shared properties and functionality in real life, which is exactly what our programming languages are meant to emulate and model.
+Inheritance is here for our convenience and to keep our code DRY (that stands for "Don't Repeat Yourself"). It might seem like an intimidating concept, but once we master it, it can be a powerful tool. We'll find many examples of inheritance and shared properties and functionality in real life, which is exactly what our programming languages are meant to emulate and model.

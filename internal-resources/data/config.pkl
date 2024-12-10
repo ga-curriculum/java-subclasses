@@ -1,0 +1,53 @@
+amends "https://pages.git.generalassemb.ly/modular-curriculum-all-courses/universal-resources-internal/static/v2/pkl/template.pkl"
+
+import "microlessons.pkl" as mls
+
+// See template.pkl for full configuration options available here.
+
+// After modifying this file, use this command while in the root directory
+// for this project to create the final configuration file (config.json):
+// pkl eval -f json ./internal-resources/data/config.pkl -o %{moduleDir}/%{moduleName}.%{outputFormat}
+
+repo {
+  // This name is shown in the header nav to navigate users home
+  friendlyName = "Java Subclasses"
+  // This must match the repo name as it appears on GitHub exactly
+  name = "java-subclasses"
+  type = "Lesson"
+}
+
+courses {
+  new {
+    name = "jcd"
+    microlessons {
+      // add microlessons here, in the order they should be delivered
+      mls.setup
+	  mls.superclassesAndSubclasses
+      mls.objectTypecasting
+      mls.shapesCodeAlong	  
+    }
+  }
+  
+  new {
+    name = "jsc"
+    microlessons {
+      // add microlessons here, in the order they should be delivered
+      mls.setup
+	  mls.superclassesAndSubclasses
+      mls.objectTypecasting
+      mls.shapesCodeAlong
+    }
+  }
+
+  new {
+    name = "fallback"
+    microlessons {
+      // add microlessons here, in the order they should be delivered
+      mls.setup
+	  mls.superclassesAndSubclasses
+      mls.objectTypecasting
+      mls.shapesCodeAlong
+    }
+  }
+}
+
