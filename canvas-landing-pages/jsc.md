@@ -1,20 +1,22 @@
 <h1>
   <span class="prefix"></span>
-  <span class="headline">Java Methods and Scope</span>
+  <span class="headline">Java Subclasses</span>
 </h1>
 
 ## About
 
-Any programmer can code. Whereas, a good programmer can write well organised and maintainable code. Understanding java methods and method scope forms the foundation of writing organised, modular, reusable and maintainable java programs. 
+Knowing the techniques to work with subclasses and superclasses is essential for leveraging the full power of Java's OOP paradigm and building scalable, maintainable, and reusable Java code. Superclasses and subclasses align naturally with real-world hierarchies, making them invaluable in modeling complex real-world scenarios effectively in code.
+
 
 ## Content
 
 | Lesson | Est. Delivery Time | Skills |
-| ------ |:------------------:| ------ |
+| ------ |:----------:|:------ |
 | [Setup](../setup/README.md) | 10 min | Set up the development environment. |
-| [Methods](../methods/README.md) | 40 min | Code methods in java |
-| [Scope](../Scope/README.md) | 40 min | Avoid scope errors while writing java code using variables and methods |
-| **Total content**  | 90 min |  |
+| [Superclasses and Subclasses](../superclasses-and-sublcasses/README.md) | 20 min | Implementing, controlling and blocking inheritance at class level.|
+| [Object Typecasting](../upcasting-and-downcasting/README.md) | 15 min | Using object references skillfully across the inheritance hierarchy of classes.|
+| [Shapes Code-Along](../shapes-code-along/README.md) | 45 min | Refine coding skills involving class inheritance. |
+| **Total content**  | 1 hr 30 min |  |
 
 ## References
 
