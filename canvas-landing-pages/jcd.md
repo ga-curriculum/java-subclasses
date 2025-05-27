@@ -14,7 +14,7 @@ Superclasses and subclasses align naturally with real-world hierarchies, making 
 | Lesson | Est. Delivery Time | Skills |
 | ------ |:----------:|:------ |
 | [Setup](../setup/README.md)                                             |      5 min  | Set up the development environment.                                             |
-| [Superclasses and Subclasses](../superclasses-and-sublcasses/README.md) |      15 min | Implementing, controlling and blocking inheritance at class level.              |
+| [Superclasses and Subclasses](../superclasses-and-subclasses/README.md) |      15 min | Implementing, controlling and blocking inheritance at class level.              |
 | [Object Typecasting](../object-typecasting/README.md)                   |      15 min | Using object references skillfully across the inheritance hierarchy of classes. |
 | [Shapes Code-Along](../shapes-code-along/README.md)                     |      40 min | Refine coding skills involving class inheritance.                               |
 | **Total content**                                                       | 1 hr 15 min |                                                                                 |
