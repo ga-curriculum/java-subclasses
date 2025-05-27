@@ -22,7 +22,7 @@ courses {
     microlessons {
       // add microlessons here, in the order they should be delivered
       mls.setup
-	  mls.superclassesAndSubclasses
+	    mls.superclassesAndSubclasses
       mls.objectTypecasting
       mls.shapesCodeAlong	  
     }
@@ -33,7 +33,7 @@ courses {
     microlessons {
       // add microlessons here, in the order they should be delivered
       mls.setup
-	  mls.superclassesAndSubclasses
+	    mls.superclassesAndSubclasses
       mls.objectTypecasting
       mls.shapesCodeAlong
     }
@@ -44,7 +44,7 @@ courses {
     microlessons {
       // add microlessons here, in the order they should be delivered
       mls.setup
-	  mls.superclassesAndSubclasses
+	    mls.superclassesAndSubclasses
       mls.objectTypecasting
       mls.shapesCodeAlong
     }
