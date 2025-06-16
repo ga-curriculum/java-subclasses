@@ -23,7 +23,7 @@ Ensure that the **Add sample code** option is not checked.
 
 After confirming that the **New Project** window looks similar to the screenshot below, select the **Create** button. The name of the project should be `java-subclasses`, not `untitled`.
 
-![A new project being created in the ~/code/ga/lectures directory, the JDK is temurin-17, and the add sample code option is has been unchecked. The name of the project should be java-arrays-and-arraylist.](./assets/new-project-complete.png)
+![A new project being created in the ~/code/ga/lectures directory, the JDK is temurin-17, and the add sample code option is has been unchecked. The name of the project should be java-subclasses.](./assets/new-project-complete.png)
 
 Right-click on the <code class="filepath">src/main/java</code> directory and select **New** > **Java Class**, as shown in the screenshot below:
 

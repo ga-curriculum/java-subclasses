@@ -4,4 +4,5 @@
 </h1>
 
 ## Lesson references
+
 - [Oracle - The Java Tutorials - Inheritance](https://docs.oracle.com/javase/tutorial/java/IandI/subclasses.html)
